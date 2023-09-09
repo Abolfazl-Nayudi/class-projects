@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 85%;
+  display: inline-block;
+}
+
+section.dict > h2 {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: blueviolet;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.word-list {
+  margin: 1.5rem 0 0;
+  list-style-type: none;
+  /* width: 100%; */
+}
+
+.word-list > li {
+  width: 300px;
+  background-color: cadetblue;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  margin: 0 auto 2rem;
+}
+
+nav {
+  display: inline-block;
+  width: 15%;
+  height: 500px;
+  background-color: bisque;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+nav::-webkit-scrollbar {
+  display: none;
+}
+
+nav > .navbar {
+  list-style-type: none;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+.navbar > li {
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.navbar > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 70%;
+  }
+
+  nav {
+    width: 30%;
+  }
+}
+
+/* @media (min-width: 700px) and (max-width: 900px) {
+  .word-list > li {
+    background-color: orange;
+  }
+} */
+
+@media (700px <= width <= 900px) {
+  .word-list > li {
+    background-color: orange;
+  }
+}
